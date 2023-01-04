@@ -1,6 +1,10 @@
 import React, { useState } from 'react'
 import FlashcardList from './FlashcardList'
 import './App.css'
+import Navbar from './Navbar'
+import Pricing from './pages/Pricing'
+import Create from './pages/Create'
+import Home from './pages/Home'
 
 const SAMPLE_FLASHCARDS = [
   {
@@ -18,54 +22,26 @@ const SAMPLE_FLASHCARDS = [
 ]
 
 export default function App() {
-  const [flashcards, setFlashcards] = useState(SAMPLE_FLASHCARDS)
-  //const [variable, setVariable] = useState(default value)
+  let component
 
-  const [inputQuestion, setInputQuestion] = useState('')
-  const [inputAnswer, setInputAnswer] = useState('')
-
-  function handleOnClick() {
-    //putting information through the localStorage
-
-    if (inputAnswer !== '' && inputQuestion !== '') {
-      setFlashcards((flashcards) => [
-        ...flashcards,
-        {
-          id: flashcards.length + 1,
-          question: inputQuestion,
-          answer: inputAnswer,
-          // options: [],
-        },
-      ])
-    }
-
-    setInputAnswer('')
-    setInputQuestion('')
+  switch (window.location.pathname) {
+    case '/':
+      component = <Home />
+      break
+    case '/pricing':
+      component = <Pricing />
+      break
+    case '/create':
+      component = <Create />
+      break
   }
+
+  
 
   return (
     <div>
-      <FlashcardList flashcards={flashcards} />
-
-      <div>
-        <input
-          type="text"
-          placeholder="Enter Question"
-          value={inputQuestion}
-          onChange={(event) => {
-            setInputQuestion(event.target.value)
-          }}
-        ></input>
-        <input
-          type="text"
-          placeholder="Enter Answer"
-          value={inputAnswer}
-          onChange={(event) => {
-            setInputAnswer(event.target.value)
-          }}
-        ></input>
-        <button onClick={handleOnClick}>Submit</button>
-      </div>
+      <Navbar />
+      {component}
     </div>
   )
 }
