@@ -57,6 +57,7 @@ export default function Create() {
       <div>
         <FlashcardList flashcards={flashcards} />
       </div>
+      {/*for rendering the actual flashcard template 'for FLashcards'*/ }
 
       <div>
         <input
