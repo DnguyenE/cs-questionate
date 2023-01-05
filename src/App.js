@@ -1,12 +1,11 @@
 import React, { useState } from 'react'
-import FlashcardList from './FlashcardList'
 import './App.css'
 import Navbar from './Navbar'
 import Pricing from './pages/FlashCards'
 import Create from './pages/Create'
 import Home from './pages/Home'
 
-const SAMPLE_FLASHCARDS = [
+export const SAMPLE_FLASHCARDS = [
   {
     id: 1,
     question: 'What is 2 + 2?',
@@ -22,7 +21,7 @@ const SAMPLE_FLASHCARDS = [
 ]
 
 export default function App() {
-  let component
+  let component //declaring a varibale component 
 
   switch (window.location.pathname) {
     case '/':

@@ -1,10 +1,11 @@
 import FlashcardList from '../FlashcardList'
 import React, { useState } from 'react'
 import './App.css'
+import { SAMPLE_FLASHCARDS } from '../App'
 
 export default function Create() {
 
-  const [flashcards, setFlashcards] = useState([])
+  const [flashcards, setFlashcards] = useState(SAMPLE_FLASHCARDS)
   //const [variable, setVariable] = useState(default value)
 
   const [inputQuestion, setInputQuestion] = useState('')
