@@ -1,21 +1,19 @@
 export default function Navbar() {
-
-      const path = window.location.pathname
+  const path = window.location.pathname
 
   return (
     <nav className="nav">
       <a href="/" className="site-title">
-        Site Name
+        Questionate
       </a>
       <ul>
         <li>
-          <a href="/pricing">Pricing</a>
+          <a href="/pricing">FlashCards</a>
         </li>
         <li>
-          <a href="/create">About</a>
+          <a href="/create">Create New Flashcard</a>
         </li>
       </ul>
     </nav>
   )
 }
-

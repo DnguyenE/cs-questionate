@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import FlashcardList from './FlashcardList'
 import './App.css'
 import Navbar from './Navbar'
-import Pricing from './pages/Pricing'
+import Pricing from './pages/FlashCards'
 import Create from './pages/Create'
 import Home from './pages/Home'
 
