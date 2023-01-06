@@ -1,6 +1,6 @@
 import FlashcardList from '../FlashcardList'
 import React, { useState } from 'react'
-import './App.css'
+import '../App.css'
 
 export function setCard (obj) {
   window.localStorage.setItem('cards', JSON.stringify(obj))

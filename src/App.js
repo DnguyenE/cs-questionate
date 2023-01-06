@@ -4,21 +4,9 @@ import Navbar from './Navbar'
 import SavedFlashCards from './pages/FlashCards'
 import Create from './pages/Create'
 import Home from './pages/Home'
-
-export const SAMPLE_FLASHCARDS = [
-  {
-    id: 1,
-    question: 'What is 2 + 2?',
-    answer: '4',
-    options: ['2', '3', '4', '5'],
-  },
-  {
-    id: 2,
-    question: 'Question 2?',
-    answer: 'Answer',
-    options: ['Answer', 'Answer 1', 'Answer 2', 'Answer 3'],
-  },
-]
+import ElementCards from './pages/PeriodicElements'
+import MathCards from './pages/MathContent'
+import LiteratureInfo from './pages/LiteratureContent'
 
 export default function App() {
   let component //declaring a varibale component 
@@ -32,6 +20,15 @@ export default function App() {
       break
     case '/create':
       component = <Create />
+      break
+    case '/saved-flashcards/periodic-elements':
+      component = <ElementCards />
+      break
+    case '/saved-flashcards/math-cards':
+      component = <MathCards />
+      break
+    case '/saved-flashcards/literature':
+      component = <LiteratureInfo />
       break
   }
 
