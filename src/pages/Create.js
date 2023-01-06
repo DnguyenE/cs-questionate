@@ -5,7 +5,7 @@ import { SAMPLE_FLASHCARDS } from '../App'
 
 export default function Create() {
 
-  const [flashcards, setFlashcards] = useState(SAMPLE_FLASHCARDS)
+  const [flashcards, setFlashcards] = useState([])
   //const [variable, setVariable] = useState(default value)
 
   const [inputQuestion, setInputQuestion] = useState('')
