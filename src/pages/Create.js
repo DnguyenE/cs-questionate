@@ -1,15 +1,25 @@
 import FlashcardList from '../FlashcardList'
 import React, { useState } from 'react'
 import './App.css'
-import { SAMPLE_FLASHCARDS } from '../App'
+
+export function setCard (obj) {
+  window.localStorage.setItem('cards', JSON.stringify(obj))
+}
 
 export default function Create() {
 
+  var existingCard = localStorage.getItem('cards')
+
   const [flashcards, setFlashcards] = useState([])
+  setCard(flashcards)
+
   //const [variable, setVariable] = useState(default value)
 
   const [inputQuestion, setInputQuestion] = useState('')
   const [inputAnswer, setInputAnswer] = useState('')
+  const [inputTitle, setInputTitle] = useState('')
+
+  window.localStorage.setItem('title', inputTitle)
 
   function handleOnClick() {
     //putting information through the localStorage
@@ -22,8 +32,11 @@ export default function Create() {
           question: inputQuestion,
           answer: inputAnswer,
           options: [],
-        },
+        }
       ])
+
+      setCard(flashcards)
+      localStorage.setItem('title', inputTitle)
     }
 
     setInputAnswer('')
@@ -32,7 +45,18 @@ export default function Create() {
 
   return (
     <div className="container">
-      <FlashcardList flashcards={flashcards} />
+      <input
+        type="text"
+        placeholder="Enter Title"
+        value={inputTitle}
+        onChange={(event) => {
+          setInputTitle(event.target.value)
+        }}
+      ></input>
+
+      <div>
+        <FlashcardList flashcards={flashcards} />
+      </div>
 
       <div>
         <input
@@ -53,6 +77,9 @@ export default function Create() {
         ></input>
         <button onClick={handleOnClick}>Submit</button>
       </div>
+
+      
+
     </div>
   )
 }

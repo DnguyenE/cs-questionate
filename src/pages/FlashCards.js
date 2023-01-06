@@ -1,3 +1,11 @@
-export default function Pricing() {
-  return <h1>Page for inputting the created flashcard list</h1>
+import FlashcardList from '../FlashcardList'
+
+export default function savedFlashCards() {
+  let data = localStorage.getItem('title')
+
+  return (
+    <div className="container">
+      <p>{localStorage.getItem('title')}</p>
+    </div>
+  )
 }

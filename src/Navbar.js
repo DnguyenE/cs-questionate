@@ -8,7 +8,7 @@ export default function Navbar() {
       </a>
       <ul>
         <li>
-          <a href="/pricing">FlashCards</a>
+          <a href="/saved-flashcards">FlashCards</a>
         </li>
         <li>
           <a href="/create">Create New Flashcard</a>

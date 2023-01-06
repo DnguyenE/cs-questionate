@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './App.css'
 import Navbar from './Navbar'
-import Pricing from './pages/FlashCards'
+import SavedFlashCards from './pages/FlashCards'
 import Create from './pages/Create'
 import Home from './pages/Home'
 
@@ -27,8 +27,8 @@ export default function App() {
     case '/':
       component = <Home />
       break
-    case '/pricing':
-      component = <Pricing />
+    case '/saved-flashcards':
+      component = <SavedFlashCards />
       break
     case '/create':
       component = <Create />
