@@ -12,7 +12,7 @@ const MATH_CARDS = [
 ]
 
 export default function MathCards() {
-  const [flashcards, setFlashcards] = useState(MATH_CARDS)
+  const [flashcards] = useState(MATH_CARDS)
 
   //const [variable, setVariable] = useState(default value)
 

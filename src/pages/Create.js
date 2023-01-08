@@ -8,8 +8,6 @@ export function setCard (obj) {
 
 export default function Create() {
 
-  var existingCard = localStorage.getItem('cards')
-
   const [flashcards, setFlashcards] = useState([])
   setCard(flashcards)
 

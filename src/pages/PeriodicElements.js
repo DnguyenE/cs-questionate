@@ -1,10 +1,10 @@
 import { useState } from 'react'
 import FlashcardList from '../FlashcardList'
 
-{
-  /*Creating 16 different Chem/Table of Elements flashcards.
+
+/*Creating 16 different Chem/Table of Elements flashcards.
 Increasing in difficulty as id # increases. */
-}
+
 /*import MathJax from 'react-mathjax' --need to figure out how 
 to get math symbols for id15 & id16 */
 const ATOMIC_FLASHCARDS = [
@@ -139,7 +139,7 @@ const ATOMIC_FLASHCARDS = [
 ]
 
 export default function ElementCards() {
-  const [flashcards, setFlashcards] = useState(ATOMIC_FLASHCARDS)
+  const [flashcards] = useState(ATOMIC_FLASHCARDS)
 
   //const [variable, setVariable] = useState(default value)
 

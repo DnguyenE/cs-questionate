@@ -1,5 +1,3 @@
-import FlashcardList from '../FlashcardList'
-
 export default function savedFlashCards() {
   return (
     <div className="container">

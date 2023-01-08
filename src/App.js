@@ -1,4 +1,3 @@
-import React, { useState } from 'react'
 import './App.css'
 import Navbar from './Navbar'
 import SavedFlashCards from './pages/FlashCards'
@@ -30,6 +29,8 @@ export default function App() {
     case '/saved-flashcards/literature':
       component = <LiteratureInfo />
       break
+    default:
+      break;
   }
 
   

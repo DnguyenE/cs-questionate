@@ -12,7 +12,7 @@ const LITERATURE_CARDS = [
 ]
 
 export default function LiteratureInfo() {
-  const [flashcards, setFlashcards] = useState(LITERATURE_CARDS)
+  const [flashcards] = useState(LITERATURE_CARDS)
 
   //const [variable, setVariable] = useState(default value)
 
