@@ -1,8 +1,9 @@
-/*Finished the english 'literature' flashcards, but the questions are more
+{/*Finished the english 'literature' flashcards, but the questions are more
 grammar-based, not really on literature. I left the const and file name as 
 literature bc its pointless to go and change all that, but i did change the "
 Study Literature with me" to "Study Grammar with me".
-*/ import { useState } from "react"
+*/ }
+import { useState } from "react"
 import FlashcardList from "../FlashcardList"
 
 const LITERATURE_CARDS = [
