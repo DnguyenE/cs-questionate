@@ -1,5 +1,8 @@
 import { useState } from 'react'
 import FlashcardList from '../FlashcardList'
+import 'katex/dist/katex.min.css'
+import { InlineMath, BlockMath } from 'react-katex';
+const katex = require('katex')
 
 {
   /*Creating 16 different Chem/Table of Elements flashcards.
@@ -134,7 +137,7 @@ const ATOMIC_FLASHCARDS = [
     question:
       'What is the Electron Configuration of an Oxygen Atom in an Excited State?',
     answer: '1s^22s^22p^3s^1',
-    options: ['1s^22s^22p^3s1', '1s^22s^22p^4', '1s^22s^32p^3', '1s^12s^22p^5'],
+    options: ['$1s^{2}2s^22p^3s1$', '1s^22s^22p^4', '1s^22s^32p^3', '1s^12s^22p^5'],
   },
 ]
 

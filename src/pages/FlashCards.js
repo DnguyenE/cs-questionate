@@ -13,7 +13,7 @@ export default function savedFlashCards() {
         <a href="/saved-flashcards/math-cards">Study some math with me</a>
       </div>
       <div>
-        <a href="/saved-flashcards/literature">Study some literature with me</a>
+        <a href="/saved-flashcards/literature">Study some grammar with me</a>
       </div>
     </div>
   )
