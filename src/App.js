@@ -6,7 +6,7 @@ import Create from './pages/Create'
 import Home from './pages/Home'
 import ElementCards from './pages/PeriodicElements'
 import MathCards from './pages/MathContent'
-import LiteratureInfo from './pages/LiteratureContent'
+import LiteratureInfo from './pages/GrammarContent'
 
 export default function App() {
   let component //declaring a varibale component 
