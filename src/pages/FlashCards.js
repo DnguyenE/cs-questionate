@@ -2,17 +2,19 @@ export default function savedFlashCards() {
   return (
     <div className="container">
       <h1>This page is for displaying sets of created flashcards</h1>
-      <div>
-        <a href="/saved-flashcards/periodic-elements">
-          Study the periodic table with me
-        </a>
-      </div>
-      <div>
-        <a href="/saved-flashcards/math-cards">Study some math with me</a>
-      </div>
-      <div>
-        <a href="/saved-flashcards/literature">Study some literature with me</a>
-      </div>
+      
+      <form action="/saved-flashcards/periodic-elements">
+        <button class='preset-btn' type="submit">Study the periodic table with me!</button>
+      </form>
+
+      <form action="/saved-flashcards/math-cards">
+        <button class='preset-btn' type="submit">Study some math with me!</button>
+      </form>
+
+      <form action="/saved-flashcards/literature">
+        <button class='preset-btn' type="submit">Study some literature with me</button>
+      </form>
     </div>
+
   )
 }
