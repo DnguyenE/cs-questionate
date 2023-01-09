@@ -1,5 +1,5 @@
 import './App.css'
-import Navbar from './Navbar'
+import Navbar from './navBar/Navbar'
 import SavedFlashCards from './pages/FlashCards'
 import Create from './pages/Create'
 import Home from './pages/Home'

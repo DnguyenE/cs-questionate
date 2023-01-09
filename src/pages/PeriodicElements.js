@@ -144,7 +144,7 @@ export default function ElementCards() {
   //const [variable, setVariable] = useState(default value)
 
   return (
-    <div className="container">
+    <div className='container'>
       <div>
         <FlashcardList flashcards={flashcards} />
       </div>

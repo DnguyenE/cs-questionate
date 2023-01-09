@@ -1,5 +1,4 @@
 export default function Navbar() {
-
   return (
     <nav className="nav">
       <a href="/" className="site-title">
@@ -7,10 +6,14 @@ export default function Navbar() {
       </a>
       <ul>
         <li>
-          <a href="/saved-flashcards">FlashCards</a>
+          <a href="/saved-flashcards">
+            <button type="submit">Flashcard</button>
+          </a>
         </li>
         <li>
-          <a href="/create">Create New Flashcard</a>
+          <a href="/create">
+            <button type="submit">Custom New Flashcard Set</button>
+          </a>
         </li>
       </ul>
     </nav>
