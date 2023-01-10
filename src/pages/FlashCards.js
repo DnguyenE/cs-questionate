@@ -15,6 +15,16 @@ export default function savedFlashCards() {
       <div>
         <a href="/saved-flashcards/literature">Study some grammar with me</a>
       </div>
+      <div>
+        <a href="/saved-flashcards/periodic-elements">
+          Study the periodic table with me
+        </a>
+      </div>
+      <div>
+        <a href="/saved-flashcards/compsci">
+          Study some Computer Science with me
+        </a>
+      </div>
     </div>
   )
 }
