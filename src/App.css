@@ -1,5 +1,5 @@
 body {
-  background-color: #555;
+  background-color: lightgray;
   margin: 0;
 }
 
@@ -18,7 +18,8 @@ body {
   margin-bottom: 20px;
 }
 
-.container form, Button {
+.container form,
+Button {
   text-align: center;
 }
 
@@ -92,4 +93,7 @@ body {
   margin-top: 1rem;
 }
 
-
+/*hopmepage styling*/
+.homepagebutton {
+  text-align: center;
+}

@@ -7,6 +7,7 @@ import ElementCards from './pages/PeriodicElements'
 import MathCards from './pages/MathContent'
 import LiteratureInfo from './pages/LiteratureContent'
 import CompsciCards from './pages/CompsciContent'
+import AboutProject from './pages/aboutproject'
 import { Typography, createTheme, ThemeProvider } from '@mui/material'
 
 const theme = createTheme({
@@ -45,6 +46,8 @@ export default function App() {
     case '/saved-flashcards/compsci':
       component = <CompsciCards />
       break
+    case '/aboutus':
+      component = <AboutProject />
     default:
       break
   }
