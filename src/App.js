@@ -6,9 +6,21 @@ import Home from './pages/Home'
 import ElementCards from './pages/PeriodicElements'
 import MathCards from './pages/MathContent'
 import LiteratureInfo from './pages/LiteratureContent'
+import { Typography, createTheme, ThemeProvider } from '@mui/material'
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: '#29b6f6',
+    },
+    secondary: {
+      main: '#ab47bc',
+    },
+  },
+})
 
 export default function App() {
-  let component //declaring a varibale component 
+  let component //declaring a varibale component
 
   switch (window.location.pathname) {
     case '/':
@@ -30,15 +42,15 @@ export default function App() {
       component = <LiteratureInfo />
       break
     default:
-      break;
+      break
   }
 
-  
-
   return (
-    <div>
-      <Navbar />
-      {component}
-    </div>
+      <ThemeProvider theme={theme}>
+        <Typography>
+          <Navbar />
+          {component}
+        </Typography>
+      </ThemeProvider>
   )
 }

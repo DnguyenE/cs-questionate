@@ -1,6 +1,7 @@
 import FlashcardList from '../FlashcardList'
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import '../App.css'
+import { Button, TextField } from '@mui/material'
 
 export function setCard(obj) {
   window.localStorage.setItem('cards', JSON.stringify(obj))
@@ -8,7 +9,6 @@ export function setCard(obj) {
 
 export default function Create() {
   const [flashcards, setFlashcards] = useState([])
-  setCard(flashcards)
 
   //const [variable, setVariable] = useState(default value)
 
@@ -28,8 +28,6 @@ export default function Create() {
           options: [],
         },
       ])
-
-      
     }
 
     setInputAnswer('')
@@ -41,24 +39,33 @@ export default function Create() {
       <FlashcardList flashcards={flashcards} />
       {/*for rendering the actual flashcard template 'for FLashcards'*/}
 
-      <div>
-        <input
-          type="text"
-          placeholder="Enter Question"
+      <form className="save-flashcard-button">
+        <TextField
+          id="inputDefaultQ"
+          variant="outlined"
+          label="Enter Term"
+          color="primary"
           value={inputQuestion}
           onChange={(event) => {
             setInputQuestion(event.target.value)
           }}
-        ></input>
-        <input
-          type="text"
-          placeholder="Enter Answer"
+        />
+        <TextField
+          id="inputDefaultAns"
+          variant="outlined"
+          label="Enter Definition"
+          color="primary"
           value={inputAnswer}
           onChange={(event) => {
             setInputAnswer(event.target.value)
           }}
-        ></input>
-        <button onClick={handleOnClick}>Submit</button>
+        />
+      </form>
+
+      <div className="save-flashcard-button">
+        <Button onClick={handleOnClick} variant="outlined">
+          Save Flashcard
+        </Button>
       </div>
     </div>
   )

@@ -1,3 +1,5 @@
+import { Button } from "@mui/material";
+
 export default function Navbar() {
   return (
     <nav className="nav">
@@ -7,12 +9,12 @@ export default function Navbar() {
       <ul>
         <li>
           <a href="/saved-flashcards">
-            <button type="submit">Flashcard</button>
+            <Button variant="text" size="small">Created Flashcards</Button>
           </a>
         </li>
         <li>
           <a href="/create">
-            <button type="submit">Custom New Flashcard Set</button>
+            <Button variant="text" size="small">Custom New Flashcard Set</Button>
           </a>
         </li>
       </ul>
