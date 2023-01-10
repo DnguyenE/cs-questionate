@@ -7,6 +7,7 @@ import Home from './pages/Home'
 import ElementCards from './pages/PeriodicElements'
 import MathCards from './pages/MathContent'
 import LiteratureInfo from './pages/LiteratureContent'
+import CompsciCards from './pages/CompsciContent'
 
 export default function App() {
   let component //declaring a varibale component 
@@ -29,6 +30,9 @@ export default function App() {
       break
     case '/saved-flashcards/literature':
       component = <LiteratureInfo />
+      break
+    case '/saved-flashcards/compsci':
+      component = <CompsciCards />
       break
   }
 
