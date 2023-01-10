@@ -59,9 +59,45 @@ const COMPSCI_FLASHCARDS = [
     {
         id: 10,
         question:'Which Keyword is Used When a Class Inherits Another Class?',
-        answer:'x = +a',
-        options: ['x+ = (15-1)','Private','x+ = x+a','x = +a'],
+        answer:'Inherits',
+        options: ['Extends','Inherits','Inheritance','Implements'],
     },
+    {
+        id: 11,
+        question:'Which Method is the Conventional Java Method For Comparing Two Objects For Equailty?',
+        answer:'EQUALS()',
+        options: ['CLONE()','EQUALS()','IS()','ISEQUAL()'],
+    },
+    {
+        id: 12,
+        question:'Which is NOT an Example of an "Is-A" Relationship',
+        answer:'',
+        options: ['A Car is a Vehicle','A Flute is a Woodwind','Mr. Seow is a Human','Water is Wet'],
+    },
+    {
+        id: 13,
+        question:'Which Keyword is Used to Declare an Interface?',
+        answer:'Interface',
+        options: ['Extends','Interface','Inheritance','Implements'],
+    },
+    {
+        id: 14,
+        question:'Must an Abstract Class Be Implemented in its Child Class?',
+        answer:'Yes',
+        options: ['Yes','No','Sometimes'],
+    },
+    {
+        id: 15,
+        question:'Should Abstract Classes Be Instantiated?',
+        answer:'No',
+        options: ['Yes','No','Sometimes'],
+    },
+    {
+        id: 16,
+        question:'Members of a Base Class That are Declared Private are Accessible to Which Classes?',
+        answer:'Derived Classes',
+        options: ['Derived Classes','Parent Classes','No Other Classes','Interfaces'],
+    }
 ]
 export default function CompsciCards() {
     const [flashcards, setFlashcards] = useState(COMPSCI_FLASHCARDS)
