@@ -35,6 +35,15 @@ export default function savedFlashCards() {
           Study some literature with me
         </Button>
       </form>
+      <form>
+        <Button
+          href="/saved-flashcards/compsci"
+          variant="contained"
+          color="primary"
+        >
+          Study some Computer Science with me
+        </Button>
+      </form>
     </div>
   )
 }

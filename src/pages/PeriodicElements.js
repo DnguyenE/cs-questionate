@@ -1,5 +1,8 @@
 import { useState } from 'react'
 import FlashcardList from '../FlashcardList'
+import 'katex/dist/katex.min.css'
+import { InlineMath, BlockMath } from 'react-katex';
+import renderMathInElement from "katex/dist/contrib/auto-render.js";
 
 
 /*Creating 16 different Chem/Table of Elements flashcards.
@@ -7,6 +10,17 @@ Increasing in difficulty as id # increases. */
 
 /*import MathJax from 'react-mathjax' --need to figure out how 
 to get math symbols for id15 & id16 */
+
+<head> 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css" integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0" crossorigin="anonymous"/>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js" integrity="sha384-PwRUT/YqbnEjkZO0zZxNqcxACrXe+j766U2amXcgMg5457rve2Y7I6ZJSm2A0mS4" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="node_modules/katex/dist/contrib/auto-render.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body)}
+  </script>
+  </head>
 const ATOMIC_FLASHCARDS = [
   {
     id: 1,
@@ -121,11 +135,11 @@ const ATOMIC_FLASHCARDS = [
   {
     id: 15,
     question: 'What is the Electron Configuration of an Oxygen Atom?',
-    answer: '1s^22s^22p^4',
+    answer: '$1s^22s^22p^4$',
     options: [
-      '2s^22p^22d^4',
-      '1s^22s^22p^4',
-      '1s^21p^42s^2',
+      '$2s^22p^22d^4$',
+      '$1s^22s^22p^4$',
+      '$ 1s^21p^42s^2 $',
       'None of the Above',
     ],
   },
@@ -133,8 +147,8 @@ const ATOMIC_FLASHCARDS = [
     id: 16,
     question:
       'What is the Electron Configuration of an Oxygen Atom in an Excited State?',
-    answer: '1s^22s^22p^3s^1',
-    options: ['1s^22s^22p^3s1', '1s^22s^22p^4', '1s^22s^32p^3', '1s^12s^22p^5'],
+    answer: '$ 1s^22s^22p^3s^1 $',
+    options: ['$ 1s^22s^22p^3s1 $', '$ 1s^22s^22p^4 $', '$ 1s^22s^32p^3 $', '$ 1s^12s^22p^5 $'],
   },
 ]
 

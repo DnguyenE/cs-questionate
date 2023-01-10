@@ -6,6 +6,7 @@ import Home from './pages/Home'
 import ElementCards from './pages/PeriodicElements'
 import MathCards from './pages/MathContent'
 import LiteratureInfo from './pages/LiteratureContent'
+import CompsciCards from './pages/CompsciContent'
 import { Typography, createTheme, ThemeProvider } from '@mui/material'
 
 const theme = createTheme({
@@ -41,16 +42,19 @@ export default function App() {
     case '/saved-flashcards/literature':
       component = <LiteratureInfo />
       break
+    case '/saved-flashcards/compsci':
+      component = <CompsciCards />
+      break
     default:
       break
   }
 
   return (
-      <ThemeProvider theme={theme}>
-        <Typography>
-          <Navbar />
-          {component}
-        </Typography>
-      </ThemeProvider>
+    <ThemeProvider theme={theme}>
+      <Typography>
+        <Navbar />
+        {component}
+      </Typography>
+    </ThemeProvider>
   )
 }
