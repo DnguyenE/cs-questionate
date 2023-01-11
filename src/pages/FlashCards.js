@@ -1,4 +1,4 @@
-import { Button } from '@mui/material'
+import { Button } from "@mui/material";
 
 export default function savedFlashCards() {
   return (
@@ -45,5 +45,5 @@ export default function savedFlashCards() {
         </Button>
       </form>
     </div>
-  )
+  );
 }

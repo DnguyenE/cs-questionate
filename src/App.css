@@ -39,7 +39,7 @@ Button {
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
   background-color: white;
   transform-style: preserve-3d;
-  height: 165px;
+  height: 210px;
   transition: 200ms;
   cursor: pointer;
   transform: perspective(1000px) rotateY(var(--rotate-y, 0))
@@ -96,4 +96,22 @@ Button {
 /*hopmepage styling*/
 .homepagebutton {
   text-align: center;
+}
+
+.aboutusbutton1 {
+  text-align: center;
+}
+
+.aboutusbutton2 {
+  text-align: center;
+}
+
+.clickbelow {
+  text-align: center;
+  color: #29b6f6;
+}
+
+.or {
+  text-align: center;
+  color: #29b6f6;
 }
