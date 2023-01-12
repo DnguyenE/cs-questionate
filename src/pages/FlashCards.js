@@ -11,16 +11,16 @@ export default function savedFlashCards() {
           variant="contained"
           color="primary"
         >
-          Study some chemistry with me
+          Study some Chemistry with me
         </Button>
       </form>
       <form>
         <Button
-          href="/saved-flashcards/math-cards"
+          href="/saved-flashcards/history-cards"
           variant="contained"
           color="primary"
         >
-          Study some math with me
+          Study some History with me
         </Button>
       </form>
 
@@ -30,7 +30,7 @@ export default function savedFlashCards() {
           variant="contained"
           color="primary"
         >
-          Study some literature with me
+          Study some Literature with me
         </Button>
       </form>
       <form>

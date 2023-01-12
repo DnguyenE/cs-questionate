@@ -147,7 +147,7 @@ export default function LiteratureInfo() {
           size="medium"
           variant="contained"
         >
-          Home
+          Back
         </Button>
       </form>
     </div>

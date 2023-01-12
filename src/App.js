@@ -4,7 +4,7 @@ import SavedFlashCards from "./pages/FlashCards";
 import Create from "./pages/Create";
 import Home from "./pages/Home";
 import ElementCards from "./pages/PeriodicElements";
-import MathCards from "./pages/MathContent";
+import HistoryCards from "./pages/HistoryContent";
 import LiteratureInfo from "./pages/LiteratureContent";
 import CompsciCards from "./pages/CompsciContent";
 import AboutProject from "./pages/aboutproject";
@@ -37,8 +37,8 @@ export default function App() {
     case "/saved-flashcards/periodic-elements":
       component = <ElementCards />;
       break;
-    case "/saved-flashcards/math-cards":
-      component = <MathCards />;
+    case "/saved-flashcards/history-cards":
+      component = <HistoryCards />;
       break;
     case "/saved-flashcards/literature":
       component = <LiteratureInfo />;

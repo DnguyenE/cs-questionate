@@ -18,16 +18,16 @@ export default function AboutProject() {
         We began working on Questionate only a few weeks ago. The entire process
         of app developing was new to us, but we did not let that stop us from
         using our knowledge of software development to take this opportunity to
-        learn and try to create something new and useful. Learning the necessary
-        Javascript, HTML, and CSS programming languages were not easy to do in
-        such a short timeframe, but through time our app was in developing
-        stages. We also became familiar with Javascript front-end library React,
-        which helped us build this user interface. The entire process has been
-        very beneficial to us. Learning new programming languages is one of many
-        lessons we learned while working on this app, but by also using
-        applications such as GitHub to store, manage, track, and control changes
-        to our program, we are better prepared for our next steps in our omputer
-        science career.
+        learn and try to create something new and useful. Using resources listed
+        below, as well as learning the necessary Javascript, HTML, and CSS
+        programming languages were not easy to do in such a short timeframe, but
+        through time our app was in developing stages. We also became familiar
+        with Javascript front-end library React, which helped us build this user
+        interface. The entire process has been very beneficial to us. Learning
+        new programming languages is one of many lessons we learned while
+        working on this app, but by also using applications such as GitHub to
+        store, manage, track, and control changes to our program, we are better
+        prepared for our next steps in our omputer science career.
       </h4>
       <img src="https://imgs.search.brave.com/V3SiFI_OPM0rCwUJsIzc1txw3dfzrcR1Vy511P0Tzy8/rs:fit:474:225:1/g:ce/aHR0cHM6Ly90c2Uz/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5O/XzZESXJGcDNiM3F2/M1dURG9ocXhnSGFI/YSZwaWQ9QXBp" />
       <img src="https://imgs.search.brave.com/xXqs944lL9QOmvt_KL1imnNeB9g9D-AmW-3PgIVWaiU/rs:fit:1188:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5O/OXhySzhncF84eC1n/dThuTm1aVWZ3SGFD/OSZwaWQ9QXBp" />
