@@ -1,5 +1,6 @@
 import { useState } from "react";
 import FlashcardList from "../FlashcardList";
+import Button from "@mui/material/Button";
 
 /*Finished the english 'literature' flashcards, but the questions are more
 grammar-based, not really on literature. I left the const and file name as 
@@ -139,6 +140,16 @@ export default function LiteratureInfo() {
         <FlashcardList flashcards={flashcards} />
       </div>
       {/*for rendering the actual flashcard template 'for FLashcards'*/}
+      <form className="backbuttonliterature">
+        <Button
+          href="/saved-flashcards"
+          colour="secondary"
+          size="medium"
+          variant="contained"
+        >
+          Home
+        </Button>
+      </form>
     </div>
   );
 }

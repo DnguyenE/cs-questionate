@@ -106,12 +106,41 @@ Button {
   text-align: center;
 }
 
+.backbutton1 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
 .clickbelow {
   text-align: center;
-  color: #29b6f6;
+  color: white;
 }
 
 .or {
   text-align: center;
-  color: #29b6f6;
+  color: white;
+}
+
+.backhome {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.intro0 {
+  text-align: center;
+  color: white;
+}
+.intro1 {
+  text-align: center;
+  color: white;
+}
+
+.intro2 {
+  text-align: center;
+  color: white;
+}
+
+.learnbutton {
+  text-align: center;
+  color: white;
 }

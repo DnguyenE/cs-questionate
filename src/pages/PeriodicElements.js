@@ -1,7 +1,6 @@
 import { useState } from "react";
 import FlashcardList from "../FlashcardList";
-import "katex/dist/katex.min.css";
-import { InlineMath, BlockMath } from "react-katex";
+import Button from "@mui/material/Button";
 import renderMathInElement from "katex/dist/contrib/auto-render.js";
 
 /*Creating 16 different Chem/Table of Elements flashcards.
@@ -151,26 +150,16 @@ const ATOMIC_FLASHCARDS = [
   },
   {
     id: 15,
-    question: "What is the Electron Configuration of an Oxygen Atom?",
-    answer: "$1s^22s^22p^4$",
-    options: [
-      "$2s^22p^22d^4$",
-      "$1s^22s^22p^4$",
-      "$ 1s^21p^42s^2 $",
-      "None of the Above",
-    ],
+    question: "How Many Orbitals does a Ground State Oxygen Atom Occupy?",
+    answer: "3",
+    options: ["1", "2", "3", "4"],
   },
   {
     id: 16,
     question:
-      "What is the Electron Configuration of an Oxygen Atom in an Excited State?",
-    answer: "$ 1s^22s^22p^3s^1 $",
-    options: [
-      "$ 1s^22s^22p^3s1 $",
-      "$ 1s^22s^22p^4 $",
-      "$ 1s^22s^32p^3 $",
-      "$ 1s^12s^22p^5 $",
-    ],
+      "How Many Orbitals Does an Oxygen Atom Occupy in an Excited State?",
+    answer: "4",
+    options: ["0", "2", "3", "4"],
   },
 ];
 
@@ -185,6 +174,17 @@ export default function ElementCards() {
         <FlashcardList flashcards={flashcards} />
       </div>
       {/*for rendering the actual flashcard template 'for FLashcards'*/}
+
+      <form className="backbuttonperiodic">
+        <Button
+          href="/saved-flashcards"
+          colour="secondary"
+          size="medium"
+          variant="contained"
+        >
+          Home
+        </Button>
+      </form>
     </div>
   );
 }

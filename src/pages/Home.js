@@ -1,20 +1,46 @@
 import { Button } from "@mui/material";
+import image from "./image.png";
 export default function Home() {
   return (
-    <div>
-      <h1>Welcome to Questionate</h1>
-      <h4>
+    <div
+      style={{
+        backgroundImage:
+          "url(https://imgs.search.brave.com/FfwDs1NofJ0EZRXKR3ayVgk9ZtwwT6qSoeYR7uqHch8/rs:fit:759:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5C/SnJ6QXFaZDRNR3JD/N2xPRXRLelZRSGFF/byZwaWQ9QXBp)",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "contain",
+        height: 920,
+        width: 1500,
+      }}
+    >
+      <h1 className="intro0">Welcome to Questionate</h1>
+      <h2 className="intro1">
         This is a digital study application that uses flashcards to help you
-        study and learn!{" "}
-      </h4>
-      <h4>
-        You can use one of our built-in flashcard sets, or create a set of
-        custom flashcards to test yourself with
-      </h4>
-      <h3>
-        To get started, click the 'Create New Flashcard' box in the upper right
-        corner of the page{" "}
-      </h3>
+        study and learn! You can use one of our built-in flashcard sets, or
+        create a set of custom flashcards to test yourself with. Click below to
+        create your own questions and start learning now!
+      </h2>
+      <form className="aboutusbutton1">
+        <Button
+          href="/create"
+          colour="primary"
+          size="medium"
+          variant="contained"
+        >
+          Create your own
+        </Button>
+      </form>
+      <h3 className="or">Or try our pre-made flashcards:</h3>
+      <form className="aboutusbutton2">
+        <Button
+          href="/saved-flashcards"
+          colour="primary"
+          size="medium"
+          variant="contained"
+        >
+          Pre-made flashcards
+        </Button>
+      </form>
+      <h3 className="learnbutton">To learn about this project, click below:</h3>
       <form className="homepagebutton">
         <Button
           href="/aboutus"
