@@ -140,7 +140,7 @@ export default function LiteratureInfo() {
         <FlashcardList flashcards={flashcards} />
       </div>
       {/*for rendering the actual flashcard template 'for FLashcards'*/}
-      <form className="backbuttonliterature">
+      <form className="backbutton1">
         <Button
           href="/saved-flashcards"
           colour="secondary"

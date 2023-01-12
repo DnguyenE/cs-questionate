@@ -1,5 +1,5 @@
 body {
-  background-color: lightgray;
+  background-color: #333;
   margin: 0;
 }
 
@@ -12,10 +12,11 @@ body {
 
 .container .header {
   text-align: center;
+  color: White;
 }
 
 .container form {
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 .container form,
@@ -109,6 +110,7 @@ Button {
 .backbutton1 {
   margin-bottom: 1rem;
   text-align: center;
+  margin-top: 1rem;
 }
 
 .clickbelow {
@@ -122,8 +124,9 @@ Button {
 }
 
 .backhome {
-  text-align: center;
-  margin-bottom: 1rem;
+  text-align: right;
+  margin-top: auto;
+  margin-bottom: relative;
 }
 
 .intro0 {
@@ -142,5 +145,9 @@ Button {
 
 .learnbutton {
   text-align: center;
+  color: white;
+}
+
+.abtus {
   color: white;
 }

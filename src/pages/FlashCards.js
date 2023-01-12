@@ -44,7 +44,7 @@ export default function savedFlashCards() {
       </form>
       <form className="backhome">
         <Button href="/" variant="contained" color="primary">
-          Back
+          Home
         </Button>
       </form>
     </div>

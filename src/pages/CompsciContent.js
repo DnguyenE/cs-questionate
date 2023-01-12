@@ -124,7 +124,7 @@ export default function CompsciCards() {
         <FlashcardList flashcards={flashcards} />
       </div>
       {/*for rendering the actual flashcard template 'for FLashcards'*/}
-      <form className="backbuttoncompsci">
+      <form className="backbutton1">
         <Button
           href="/saved-flashcards"
           colour="secondary"

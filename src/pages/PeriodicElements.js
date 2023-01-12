@@ -175,7 +175,7 @@ export default function ElementCards() {
       </div>
       {/*for rendering the actual flashcard template 'for FLashcards'*/}
 
-      <form className="backbuttonperiodic">
+      <form className="backbutton1">
         <Button
           href="/saved-flashcards"
           colour="secondary"

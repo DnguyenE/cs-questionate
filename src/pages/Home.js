@@ -1,11 +1,10 @@
 import { Button } from "@mui/material";
-import image from "./image.png";
 export default function Home() {
   return (
     <div
       style={{
         backgroundImage:
-          "url(https://imgs.search.brave.com/FfwDs1NofJ0EZRXKR3ayVgk9ZtwwT6qSoeYR7uqHch8/rs:fit:759:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5C/SnJ6QXFaZDRNR3JD/N2xPRXRLelZRSGFF/byZwaWQ9QXBp)",
+          "url(https://imgs.search.brave.com/7Kfcvnd6rA9SATfDilO-CXt948rAZl7KIse_86qNywM/rs:fit:490:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5X/QjJucjJITlhDSjNP/Tmw4a0lDTVFBSGFI/SyZwaWQ9QXBp)",
         backgroundRepeat: "no-repeat",
         backgroundSize: "contain",
         height: 920,

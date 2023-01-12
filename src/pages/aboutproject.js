@@ -3,9 +3,9 @@ import Button from "@mui/material/Button";
 export default function AboutProject() {
   return (
     <div>
-      <h1>About Questionate</h1>
+      <h1 className="abtus">About Questionate</h1>
       <form></form>
-      <h4>
+      <h4 className="abtus">
         Questionate is an application developed by Ethan Dinh and Emil
         Melconian. Intended as a digital study tool, the goal during development
         was to create a simple and easy-to-use application that helps students
@@ -13,8 +13,8 @@ export default function AboutProject() {
         able to use a template to input custom information, or use one of our
         offered study topics.
       </h4>
-      <h1>About Our Journey</h1>
-      <h4>
+      <h1 className="abtus">About Our Journey</h1>
+      <h4 className="abtus">
         We began working on Questionate only a few weeks ago. The entire process
         of app developing was new to us, but we did not let that stop us from
         using our knowledge of software development to take this opportunity to
