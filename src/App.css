@@ -1,5 +1,5 @@
 body {
-  background-color: #555;
+  background-color: #333;
   margin: 0;
 }
 
@@ -12,13 +12,15 @@ body {
 
 .container .header {
   text-align: center;
+  color: White;
 }
 
 .container form {
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
-.container form, Button {
+.container form,
+Button {
   text-align: center;
 }
 
@@ -92,3 +94,60 @@ body {
   margin-top: 1rem;
 }
 
+/*hopmepage styling*/
+.homepagebutton {
+  text-align: center;
+}
+
+.aboutusbutton1 {
+  text-align: center;
+}
+
+.aboutusbutton2 {
+  text-align: center;
+}
+
+.backbutton1 {
+  margin-bottom: 1rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.clickbelow {
+  text-align: center;
+  color: white;
+}
+
+.or {
+  text-align: center;
+  color: white;
+}
+
+.backhome {
+  text-align: right;
+  margin-top: auto;
+  margin-bottom: relative;
+}
+
+.intro0 {
+  text-align: center;
+  color: white;
+}
+.intro1 {
+  text-align: center;
+  color: white;
+}
+
+.intro2 {
+  text-align: center;
+  color: white;
+}
+
+.learnbutton {
+  text-align: center;
+  color: white;
+}
+
+.abtus {
+  color: white;
+}

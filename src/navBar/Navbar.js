@@ -9,15 +9,19 @@ export default function Navbar() {
       <ul>
         <li>
           <a href="/saved-flashcards">
-            <Button variant="text" size="small">Created Flashcards</Button>
+            <Button variant="text" size="small">
+              Created Flashcards
+            </Button>
           </a>
         </li>
         <li>
           <a href="/create">
-            <Button variant="text" size="small">Custom New Flashcard Set</Button>
+            <Button variant="text" size="small">
+              Custom New Flashcard Set
+            </Button>
           </a>
         </li>
       </ul>
     </nav>
-  )
+  );
 }

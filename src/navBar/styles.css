@@ -14,10 +14,12 @@ body {
   align-items: stretch;
   gap: 2rem;
   padding: 0 1rem;
+  border-bottom: 4px solid #29b6f6;
 }
 
 .site-title {
   font-size: 2rem;
+  color: #29b6f6;
 }
 
 .nav ul {
@@ -38,15 +40,11 @@ body {
 }
 
 .nav li.active {
-  background-color: #555;
-}
-
-.nav li:hover {
-  background-color: #777;
+  background-color: #333;
 }
 
 .preset-btn {
-  background-color: grey;
+  background-color: #333;
   color: white;
   padding: 5px 15px;
   border-radius: 5px;
@@ -57,7 +55,7 @@ body {
 
 .nav button {
   color: black;
-  background-color: lightgrey;
+  background-color: #29b6f6;
   padding: 5px 10px;
   border-radius: 5px;
   outline: 0;

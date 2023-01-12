@@ -1,11 +1,9 @@
-import { Button } from '@mui/material'
+import { Button } from "@mui/material";
 
 export default function savedFlashCards() {
   return (
     <div className="container">
-      <h1 className="header">
-        This page is for displaying sets of created flashcards
-      </h1>
+      <h1 className="header">Try one of our pre-made study packages below!</h1>
 
       <form>
         <Button
@@ -13,16 +11,16 @@ export default function savedFlashCards() {
           variant="contained"
           color="primary"
         >
-          Study some chemistry with me!
+          Study some Chemistry with me
         </Button>
       </form>
       <form>
         <Button
-          href="/saved-flashcards/math-cards"
+          href="/saved-flashcards/history-cards"
           variant="contained"
           color="primary"
         >
-          Study some math with me!
+          Study some History with me
         </Button>
       </form>
 
@@ -32,7 +30,7 @@ export default function savedFlashCards() {
           variant="contained"
           color="primary"
         >
-          Study some literature with me
+          Study some Literature with me
         </Button>
       </form>
       <form>
@@ -44,6 +42,11 @@ export default function savedFlashCards() {
           Study some Computer Science with me
         </Button>
       </form>
+      <form className="backhome">
+        <Button href="/" variant="contained" color="primary">
+          Home
+        </Button>
+      </form>
     </div>
-  )
+  );
 }
