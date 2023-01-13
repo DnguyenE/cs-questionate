@@ -1,5 +1,5 @@
 import { useState } from "react";
-import FlashcardList from "../FlashcardList";
+import FlashcardList from "../../../src/FlashcardList";
 import Button from "@mui/material/Button";
 
 const HISTORY_CARDS = [

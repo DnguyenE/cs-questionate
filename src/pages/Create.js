@@ -1,24 +1,20 @@
-import FlashcardList from "../FlashcardList";
-import React, { useState } from "react";
-import "../App.css";
-import { Button, TextField, InputBase } from "@mui/material";
-
-export function setCard(obj) {
-  window.localStorage.setItem("cards", JSON.stringify(obj));
-}
+import FlashcardList from '../FlashcardList'
+import React, { useState } from 'react'
+import '../App.css'
+import { Button, TextField } from '@mui/material'
 
 export default function Create() {
-  const [flashcards, setFlashcards] = useState([]);
+  const [flashcards, setFlashcards] = useState([])
 
   //const [variable, setVariable] = useState(default value)
 
-  const [inputQuestion, setInputQuestion] = useState("");
-  const [inputAnswer, setInputAnswer] = useState("");
+  const [inputQuestion, setInputQuestion] = useState('')
+  const [inputAnswer, setInputAnswer] = useState('')
 
-  function handleOnClick() {
+  function handleOnClickAdd() {
     //putting information through the localStorage
 
-    if (inputAnswer !== "" && inputQuestion !== "") {
+    if (inputAnswer !== '' && inputQuestion !== '') {
       setFlashcards((flashcards) => [
         ...flashcards,
         {
@@ -27,11 +23,11 @@ export default function Create() {
           answer: inputAnswer,
           options: [],
         },
-      ]);
+      ])
     }
 
-    setInputAnswer("");
-    setInputQuestion("");
+    setInputAnswer('')
+    setInputQuestion('')
   }
 
   return (
@@ -39,31 +35,33 @@ export default function Create() {
       <FlashcardList flashcards={flashcards} />
       {/*for rendering the actual flashcard template 'for FLashcards'*/}
 
-      <form className="save-flashcard-button">
+      <form className="center-obj">
         <TextField
+          sx={{ input: { color: 'white' } }}
           id="inputDefaultQ"
           variant="outlined"
           label="Enter Term"
           color="secondary"
           value={inputQuestion}
           onChange={(event) => {
-            setInputQuestion(event.target.value);
+            setInputQuestion(event.target.value)
           }}
         />
         <TextField
+          sx={{ input: { color: 'white' } }}
           id="inputDefaultAns"
           variant="outlined"
           label="Enter Definition"
           color="secondary"
           value={inputAnswer}
           onChange={(event) => {
-            setInputAnswer(event.target.value);
+            setInputAnswer(event.target.value)
           }}
         />
       </form>
 
-      <div className="save-flashcard-button">
-        <Button onClick={handleOnClick} variant="outlined">
+      <div className="center-obj">
+        <Button onClick={handleOnClickAdd} variant="outlined">
           Save Flashcard
         </Button>
       </div>
@@ -78,5 +76,5 @@ export default function Create() {
         </Button>
       </form>
     </div>
-  );
+  )
 }

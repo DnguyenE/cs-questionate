@@ -1,13 +1,14 @@
 import "./App.css";
-import Navbar from "./navBar/Navbar";
+import "./pages/homePage/homepage.css"
+import Navbar from "./navBar/Navbar"
 import SavedFlashCards from "./pages/FlashCards";
 import Create from "./pages/Create";
-import Home from "./pages/Home";
-import ElementCards from "./pages/PeriodicElements";
-import HistoryCards from "./pages/HistoryContent";
-import LiteratureInfo from "./pages/LiteratureContent";
-import CompsciCards from "./pages/CompsciContent";
-import AboutProject from "./pages/aboutproject";
+import Home from "./pages/homePage/Home"
+import ElementCards from "./pages/eduContent/PeriodicElements"
+import HistoryCards from "./pages/eduContent/HistoryContent"
+import LiteratureInfo from "./pages/eduContent/LiteratureContent"
+import CompsciCards from "./pages/eduContent/CompsciContent"
+import AboutProject from "./pages/homePage/aboutproject"
 import { Typography, createTheme, ThemeProvider } from "@mui/material";
 
 const theme = createTheme({

@@ -40,7 +40,7 @@ export default function Home() {
         </Button>
       </form>
       <h3 className="learnbutton">To learn about this project, click below:</h3>
-      <form className="homepagebutton">
+      <form className="center-btn">
         <Button
           href="/aboutus"
           colour="primary"

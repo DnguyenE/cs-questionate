@@ -1,5 +1,5 @@
 import { useState } from "react";
-import FlashcardList from "../FlashcardList";
+import FlashcardList from "../../../src/FlashcardList";
 import Button from "@mui/material/Button";
 const COMPSCI_FLASHCARDS = [
   {
@@ -114,7 +114,7 @@ const COMPSCI_FLASHCARDS = [
   },
 ];
 export default function CompsciCards() {
-  const [flashcards, setFlashcards] = useState(COMPSCI_FLASHCARDS);
+  const [flashcards] = useState(COMPSCI_FLASHCARDS);
 
   //const [variable, setVariable] = useState(default value)
 

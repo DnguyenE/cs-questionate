@@ -29,10 +29,10 @@ export default function AboutProject() {
         store, manage, track, and control changes to our program, we are better
         prepared for our next steps in our omputer science career.
       </h4>
-      <img src="https://imgs.search.brave.com/V3SiFI_OPM0rCwUJsIzc1txw3dfzrcR1Vy511P0Tzy8/rs:fit:474:225:1/g:ce/aHR0cHM6Ly90c2Uz/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5O/XzZESXJGcDNiM3F2/M1dURG9ocXhnSGFI/YSZwaWQ9QXBp" />
-      <img src="https://imgs.search.brave.com/xXqs944lL9QOmvt_KL1imnNeB9g9D-AmW-3PgIVWaiU/rs:fit:1188:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5O/OXhySzhncF84eC1n/dThuTm1aVWZ3SGFD/OSZwaWQ9QXBp" />
-      <img src="https://imgs.search.brave.com/FzH6xwZXAT28Il7TVIc6uPXSncVJfpJC1ovpgEf5am4/rs:fit:844:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5l/VENiZFJfQUZ6YnFI/TVBYaHJKV1VRQUFB/QSZwaWQ9QXBp" />
-      <img src="https://imgs.search.brave.com/AQSiC6oCWMC5KWQcyu-OQpJtD7L23lxqjm17o3mqP40/rs:fit:474:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5r/QTEzSXRteGV2MHl0/RXFySmZfZjFnSGFI/YSZwaWQ9QXBp" />
+      <img src="https://imgs.search.brave.com/V3SiFI_OPM0rCwUJsIzc1txw3dfzrcR1Vy511P0Tzy8/rs:fit:474:225:1/g:ce/aHR0cHM6Ly90c2Uz/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5O/XzZESXJGcDNiM3F2/M1dURG9ocXhnSGFI/YSZwaWQ9QXBp" alt=""/>
+      <img src="https://imgs.search.brave.com/xXqs944lL9QOmvt_KL1imnNeB9g9D-AmW-3PgIVWaiU/rs:fit:1188:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5O/OXhySzhncF84eC1n/dThuTm1aVWZ3SGFD/OSZwaWQ9QXBp" alt=""/>
+      <img src="https://imgs.search.brave.com/FzH6xwZXAT28Il7TVIc6uPXSncVJfpJC1ovpgEf5am4/rs:fit:844:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5l/VENiZFJfQUZ6YnFI/TVBYaHJKV1VRQUFB/QSZwaWQ9QXBp" alt=""/>
+      <img src="https://imgs.search.brave.com/AQSiC6oCWMC5KWQcyu-OQpJtD7L23lxqjm17o3mqP40/rs:fit:474:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5r/QTEzSXRteGV2MHl0/RXFySmZfZjFnSGFI/YSZwaWQ9QXBp" alt=""/>
       <form className="backbutton1">
         <Button href="/" colour="secondary" size="medium" variant="contained">
           Back
