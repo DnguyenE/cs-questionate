@@ -10,11 +10,6 @@ body {
   text-align: center;
 }
 
-.container .header {
-  text-align: center;
-  color: White;
-}
-
 .container form {
   margin-bottom: 50px;
 }
@@ -22,6 +17,13 @@ body {
 .container form,
 Button {
   text-align: center;
+}
+
+.container .a:visited,
+.container .a:link,
+.container .empty-set,
+.container .header {
+  color: white;
 }
 
 .card-grid {

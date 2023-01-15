@@ -8,6 +8,7 @@ import ElementCards from "./pages/eduContent/PeriodicElements"
 import HistoryCards from "./pages/eduContent/HistoryContent"
 import LiteratureInfo from "./pages/eduContent/LiteratureContent"
 import CompsciCards from "./pages/eduContent/CompsciContent"
+import CustomSaved from "./pages/eduContent/CustomCards"
 import AboutProject from "./pages/homePage/aboutproject"
 import { Typography, createTheme, ThemeProvider } from "@mui/material";
 
@@ -46,6 +47,9 @@ export default function App() {
       break;
     case "/saved-flashcards/compsci":
       component = <CompsciCards />;
+      break;
+    case "/saved-flashcards/custom":
+      component = <CustomSaved />
       break;
     case "/aboutus":
       component = <AboutProject />;

@@ -3,13 +3,14 @@ import React, { useState } from 'react'
 import '../App.css'
 import { Button, TextField } from '@mui/material'
 
+export let custom_flashcard = []
+
 export default function Create() {
   const [flashcards, setFlashcards] = useState([])
 
-  //const [variable, setVariable] = useState(default value)
-
   const [inputQuestion, setInputQuestion] = useState('')
   const [inputAnswer, setInputAnswer] = useState('')
+  const [inputTitle, setinputTitle] = useState('')
 
   function handleOnClickAdd() {
     //putting information through the localStorage
@@ -30,8 +31,33 @@ export default function Create() {
     setInputQuestion('')
   }
 
+  function handleOnClickSaveSet() {
+    localStorage.setItem('custom-cards', JSON.stringify(flashcards))
+    localStorage.setItem('custom-title', JSON.stringify(inputTitle))
+    if (
+      JSON.parse(localStorage.getItem('custom-cards')) !== [] &&
+      JSON.parse(localStorage.getItem('custom-title')) !== ''
+    )
+      alert(
+        'Flashcard Set Saved! To access this set, navigate to (created flashcards)',
+      )
+  }
+
   return (
     <div className="container">
+      <form>
+        <TextField
+          sx={{ input: { color: 'white' } }}
+          variant="outlined"
+          label="Enter Title"
+          color="secondary"
+          value={inputTitle}
+          onChange={(event) => {
+            setinputTitle(event.target.value)
+          }}
+        />
+      </form>
+
       <FlashcardList flashcards={flashcards} />
       {/*for rendering the actual flashcard template 'for FLashcards'*/}
 
@@ -65,6 +91,13 @@ export default function Create() {
           Save Flashcard
         </Button>
       </div>
+
+      <div className="center-obj">
+        <Button onClick={handleOnClickSaveSet} variant="outlined">
+          Save Flashcard Set
+        </Button>
+      </div>
+
       <form className="backbutton1">
         <Button
           href="/saved-flashcards"
