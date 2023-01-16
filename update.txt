@@ -1,0 +1,154 @@
+31/12/22 {
+      Using a react.js, we created a barebones application for dynamically flipping an object which we then can use for flashcards
+      Using "states" in react (variables) we can render updates in the app using REACT.JS
+      Creating the styling and the functionality of the cards
+      -Created the flipping motion of the cards using dynamic classNames
+      -Used a hard coded list of SAMPLE_FLASHCARDS
+
+      To render any set of flashcards, you pass an array of objects through "flashcards.js" which is an element on its own (<FlashcardList>)
+      This would render all of the information that is passed through in the array that the user wishes to render.
+
+      If a user wanted to render any set of flashcards, the array would be passed through to FlashcardList.js which is then passed through to
+      Flashcards.js.  Both of which are responsible for dynamically changing the information on both the front and back of the flashcards using a 
+      flip function.
+
+}
+
+03/01/23 {
+      -Added a text box using HTML to have a textbox
+      -Added a button using HTML to add the new card from the textbox
+       -We made it so that when the user wanted to add a new card, it was just add and combine array of elements to make one large array
+}
+
+04/01/21 {
+      -We added a navigation bar at the top of the page for navigating through different pages
+      -Our navigation bar was very barebones at the beginning but it consisted of a title, and two buttons for navigating two different pages
+      -Started using css for styling the different HTML elements (stlying.css for the nav bar)
+      -To switch through different pages, anytime the "state" is changed, our application checks for which component we want to render
+       -For example, we used href=(page) so that the user can switch pages
+       -Then we used a switch (learned in class) to switch between all the possible cases and pages that the user wants to access
+      -Also added small changes in the name for more practical and logical understanding for the user
+      
+      At the end of the day, we changed the program to initially render nothing rather than our SAMPLE_FLASHCARDS.  This enabled us to make the app
+      do more function for a custom flashcard set
+}
+
+05/01/23 {
+      -We started working on a home page as well as well as creating some pre-coded flashcards for user studying if they wanted to study some 
+       premade topics
+            -This includes: 
+                  -Math (started not finished)
+                        -We had issues with math because we struggled to implement proper notation for question display
+                  -Chemistry (finished)
+                        -We also had issues here with question notation as we attempted to implement this feature over time
+                  -Literature (started not fininished)
+                        -We didn't struggle with this as this was very straight forward to implement
+
+      Knowing this, this was all hard coded into the code and didn't rely on anything to generate these questions and flashcards
+
+      Our home page was also very barebones at this point in time as all it had was a description of what the application did
+
+      After completing the main key components in our application, we wanted to create a function to save the custom flashcards that the users 
+      were creating.  In this application, we wanted to use a built-in function that all of our browsers have which is localStorage
+      Using localStorage, we can save the array of flashcards(objects) that the user created and save it onto the browser itself locally.
+      We struggled with this feature heavilly and it set us back days as the flashcards were to dissapear on a refresh.  
+
+      We created another page called 'create' that allows the user to create a custom flashcard set using their own information
+}
+
+06/01/23 {
+      We started off the day with deleting SAMPLE_FLASHCARDS as we would not need it anymore for testing
+      We made a new page for the hard coded flashcards that we created in the previous commits
+      To access these individual flashcard pages, we added anchor tags (clickable text) that would take you to those pages respectively
+
+      In each of the pre-coded flashcards, we added a test array of empty objects to test the rendering of each 'test array'
+}
+
+08/01/23 {
+      We changed the anchor tags in the pre-coded page to clickable buttons that would do the same function as a clickable text
+      Here, we also changed some minor tweaking in the css code for the styling of the elements like button centering and title layout.
+      This was done for the looks of the application
+}
+
+09/01/23 {
+      On this day, we finished completing the hard coded flashcards (array) for LiteratureContent
+
+      -Still struggling to add localStorage as well as trying to properly format our text for mathimatical notations
+}
+
+10/01/23 {
+      Today, we added a new package that can be imported into this project which was MaterialUI
+       -Workspaces use this packege while developing the front end of applications
+
+      We commited more styling changes that include:
+       -Fonts
+       -Color 
+       -Button functionality
+       -Text Alignment
+       -TextField (user input for text)
+
+
+      On this day, we also struggled with format as we had issues with formatting regarding what size of screen the user was operating
+      Minor tweaking for the size of rendering for any type of screen
+}
+
+11/01/23 {
+      Added a new hard coded component (Computer Science Flashcards) for user productivity
+      This required: adding a new function for rendering, a new path to access the page, a new button to click on it.
+      This was simpler compared to the first time as we already completed other buttons and used it as a template to create this new 
+      one for Computer Science
+
+      This day, we also starting working on an about us page where on this day, we only made a function as a template and in the future we
+      planned to put information about the project and how we came to complete it
+
+      Changed the homepage to also look better and add interactive elements
+}
+
+12/01/23 {
+      Changed some styling on the NavBar (font size and scaling for differnt browsers)
+      Completed the about us page with full information on the functionality of the application and added interactive buttons to get started with
+      the application including showing how each function works
+
+      This is where we decided to give up on the idea for formating math elements with proper notations and avoided that topic entirely
+      We changed chemistry questions and got rid of math questions entirely and replaced it with HistoryQuestions as we found struggles in 
+      fully implementing the packages
+
+      Adding back buttons at the bottom of the page which would lead the user to the homepage where they can navigate to another page if they'd 
+      like
+
+}
+
+13/01/23 {
+      Minor Finishing additions that include chaning the stlying for the input text boxes when creating a custom flashcard set
+}
+
+14/01/23 {
+      Finally finshed implementing localStorage for the custom flashcards and made it possible to save the custom flashcards
+      On render, the program checks if there is a custom flashcard set created and if there is, create a new button on the flashcard page to
+      access this saved flashcard set
+
+      Once the user clicks, "Save flashcard Set", the program sends the array of custom flashcards to the localStorage in the browser which can
+      then be read at another point in the program and not deleted on the refresh of the program
+}
+
+Further Stages of Development {
+      -Wanting to access online API (Databases) so that our program can build it's own set of flashcards from a desired topic of choice like
+       trivia
+      
+      -Wanting to change the styling of the website to make alerts and background more interactive and less boring
+      
+      -Wanting to have the ability to save multiple different sets of custom flashcards 
+
+      -Wanting to have the ability to create a login system where your information would be stored on the cloud opposed to being stored locally
+}
+
+
+
+
+
+
+
+
+
+
+
