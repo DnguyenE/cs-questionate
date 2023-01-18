@@ -1,14 +1,15 @@
 import { Button } from "@mui/material";
+import cspic from "./cspic.avif";
 export default function Home() {
   return (
     <div
       style={{
-        backgroundImage:
-          "url(https://imgs.search.brave.com/7Kfcvnd6rA9SATfDilO-CXt948rAZl7KIse_86qNywM/rs:fit:490:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5X/QjJucjJITlhDSjNP/Tmw4a0lDTVFBSGFI/SyZwaWQ9QXBp)",
+        backgroundImage: `url(${cspic})`,
         backgroundRepeat: "no-repeat",
-        backgroundSize: "contain",
-        height: 920,
-        width: 1500,
+        backgroundPosition: "center",
+        backgroundSize: "cover",
+        width: "100vw",
+        height: "100vh",
       }}
     >
       <h1 className="intro0">Welcome to Questionate</h1>
