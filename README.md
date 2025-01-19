@@ -1,9 +1,7 @@
-### Questionate ###
+### CS-Questionate ###
 
-This application is made for educational purposes where the student can use this application for studying and the teacher can use this application
-for generating tests.  
+This is a react application to transform physical flashcards and turn them into digital flashcards.  
+There are pre-made flashcards on the application as well as the option to create your own flashcards
 
-To read about to the project developement steps, read "update.txt" in the files
-
-- Seow CS
+All project development steps are detailed in the "update.txt" file.
 
